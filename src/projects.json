@@ -1,0 +1,33 @@
+[
+  {
+    "title": "Tic-Tac-Toe",
+    "slug": "Tic-Tac-Toe",
+    "code": "https://github.com/Cherezmz/tic-tac-toe",
+    "image": "./images/tic-tac-toe.png",
+    "description": "I need to add description here"
+  },
+
+  {
+    "title": "Notes Taker",
+    "slug": "python-note-taker",
+    "code": "https://github.com/Cherezmz/noteTakerPythonSQL",
+    "image": "./images/notetaker-code.png",
+    "description": "I need to add description here python+SQL"
+  },
+
+  {
+    "title": "Group project",
+    "slug": "modern-trousseau",
+    "code": "https://github.com/Cherezmz/moderntrousseau",
+    "image": "./images/gowns.png",
+    "description": "I need to add description here and may be more images"
+  },
+
+  {
+    "title": "War Game",
+    "slug": "war",
+    "code": "https://github.com/Cherezmz/Game-of-War",
+    "image": "./images/war-console.png",
+    "description": "I need to add description here"
+  }
+]
