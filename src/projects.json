@@ -1,7 +1,7 @@
 [
   {
     "title": "Tic-Tac-Toe",
-    "slug": "Tic-Tac-Toe",
+    "slug": "tic-tac-toe",
     "code": "https://github.com/Cherezmz/tic-tac-toe",
     "image": "./images/tic-tac-toe.png",
     "description": "I need to add description here"
@@ -9,7 +9,7 @@
 
   {
     "title": "Notes Taker",
-    "slug": "python-note-taker",
+    "slug": "python-sql-note-taker",
     "code": "https://github.com/Cherezmz/noteTakerPythonSQL",
     "image": "./images/notetaker-code.png",
     "description": "I need to add description here python+SQL"
