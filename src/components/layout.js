@@ -10,6 +10,7 @@ const Layout = ({ children }) => (
         background: `rebeccapurple`,
         marginBottom: `1.45rem`,
         height: `100px`,
+        textAlign: `center`,
       }}
     >
       <Link
