@@ -12,7 +12,7 @@ const ProjectPreview = ({ slug, imageData, title, description }) => (
     </h2>
     <p>{description}</p>
     <p>
-      <Link to={`/${slug}/`}>View this project &rarr </Link>
+      <Link to={`/${slug}/`}>View this project &rarr; </Link>
     </p>
   </div>
 )

@@ -23,7 +23,16 @@ const Layout = ({ children }) => (
         My Portfolio{" "}
       </Link>
     </header>
-    <main className="content">{children}</main>
+    <main
+      className="content"
+      style={{
+        maxWidth: `300px`,
+        marginLeft: `auto`,
+        marginRight: `auto`,
+      }}
+    >
+      {children}
+    </main>
   </React.Fragment>
 )
 
