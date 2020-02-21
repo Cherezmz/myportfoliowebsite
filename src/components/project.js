@@ -6,13 +6,12 @@ const Project = ({ imageData, title, description, url }) => (
   <div className="project">
     <h1>{title}</h1>
     <Image fluid={imageData} alt={title} />
-
     <p>{description}</p>
     <p>
-      <Link to={url}>View this project on HitHub &rarr; </Link>
+      <Link to={url}>View this project on HitHub </Link>
     </p>
     <p>
-      <Link to="/">&larr; back to all projects </Link>
+      <Link to="/">back to all projects </Link>
     </p>
   </div>
 )
