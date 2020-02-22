@@ -13,15 +13,30 @@ const Layout = ({ children }) => (
         textAlign: `center`,
       }}
     >
-      <Link
-        to="/"
+      <div
         style={{
+          display: `flex`,
+          flexDirection: `row`,
+          justifyContent: `space-between`,
           color: `white`,
+          paddingTop: `30px`,
+          marginLeft: `5%`,
+          marginRight: `5%`,
+          width: `90%`,
         }}
       >
-        {" "}
-        Homepage{" "}
-      </Link>
+        <Link
+          to="/projectsReview/"
+          style={{
+            color: `white`,
+          }}
+        >
+          About my projects
+        </Link>
+        <Link to="/aboutme/">About me</Link>
+        <Link to="/contacts/">Contacts</Link>
+        <Link to="/resume/">My resume</Link>
+      </div>
     </header>
     <main
       className="content"
