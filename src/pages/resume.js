@@ -1,8 +1,8 @@
 import React from "react"
-import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
+
 import Layout from "../components/layout"
-import Image from "../components/image"
+
 const DownloadsPage = () => {
   const data = useStaticQuery(graphql`
     {
@@ -10,6 +10,7 @@ const DownloadsPage = () => {
         edges {
           node {
             publicURL
+            name
           }
         }
       }
@@ -17,14 +18,18 @@ const DownloadsPage = () => {
   `)
   return (
     <Layout>
-      <h1>All PDF Downloads</h1>
-      <li key={`pdf-${index}`}>
-        <a href={file.node.publicURL} download>
-          {file.node.name}
-        </a>
-      </li>
-
-      {/* <ul>
+      <h1
+        style={{
+          width: `90%`,
+          marginBottom: `1.45rem`,
+          marginLeft: `auto`,
+          marginRight: `auto`,
+        }}
+      >
+        If you want to download my resume in PDF format, please click the link
+        below
+      </h1>
+      <ul>
         {data.allFile.edges.map((file, index) => {
           return (
             <li key={`pdf-${index}`}>
@@ -34,39 +39,68 @@ const DownloadsPage = () => {
             </li>
           )
         })}
-      </ul> */}
+      </ul>
     </Layout>
   )
 }
 export default DownloadsPage
-// export default () => {
+
+// import React from "react"
+// import { Link } from "gatsby"
+// import { useStaticQuery, graphql } from "gatsby"
+// import Layout from "../components/layout"
+// import Image from "../components/image"
+// import downloadFile from "../images/CV.pdf"
+// const DownloadsPage = () => {
+//   const data = useStaticQuery(graphql`
+//     {
+//       allFile(filter: { extension: { eq: "pdf" } }) {
+//         edges {
+//           node {
+//             publicURL
+//           }
+//         }
+//       }
+//     }
+//   `)
 //   return (
 //     <Layout>
-//       <div
-//         style={{
-//           maxWidth: `300px`,
-//           marginBottom: `1.45rem`,
-//           marginLeft: `auto`,
-//           marginRight: `auto`,
-//         }}
-//       >
-//         <Image />
-//       </div>
-//       <h1>Here is my CV </h1>
-//       <div
-//         style={{
-//           display: `flex`,
-//           flexDirection: `row`,
-//           justifyContent: `space-around`,
-//           paddingLeft: `5px`,
-//           paddingRight: `5px`,
-//         }}
-//       >
-//         <Link to="/projectsReview/">About my projects</Link>
-//         <Link to="/aboutme/">About me</Link>
-//         <Link to="/contacts/">Contacts</Link>
-//         <Link to="/resume/">My resume</Link>
-//       </div>
-//     </Layout>
-//   )
-// }
+//       <h1>All PDF Downloads</h1>
+//       <li key={`pdf-${index}`}>
+//         <a href={file.node.publicURL} download>
+//           {file.node.name}
+//         </a>
+//       </li>
+
+{
+  /* <ul>
+        {data.allFile.edges.map((file, index) => {
+          return (
+            <li key={`pdf-${index}`}>
+              <a href={file.node.publicURL} download>
+                {file.node.name}
+              </a>
+            </li>
+          )
+        })}
+      </ul> */
+}
+{
+  /* </Layout>
+  )
+}
+export default DownloadsPage */
+}
+// const IndexPage = () => (
+//   <>
+//     <a href={downloadFile} download>
+//       Download the imported file
+//     </a>
+//     {` `}
+//     <a href={`download.pdf`} download>
+//       Download the file from the static folder
+//     </a>
+//   </>
+// )
+
+// export default IndexPage

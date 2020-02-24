@@ -33,15 +33,36 @@ const Layout = ({ children }) => (
         >
           About my projects
         </Link>
-        <Link to="/aboutme/">About me</Link>
-        <Link to="/contacts/">Contacts</Link>
-        <Link to="/resume/">My resume</Link>
+        <Link
+          to="/aboutme/"
+          style={{
+            color: `white`,
+          }}
+        >
+          About me
+        </Link>
+        <Link
+          to="/contacts/"
+          style={{
+            color: `white`,
+          }}
+        >
+          Contacts
+        </Link>
+        <Link
+          to="/resume/"
+          style={{
+            color: `white`,
+          }}
+        >
+          My resume
+        </Link>
       </div>
     </header>
     <main
       className="content"
       style={{
-        maxWidth: `300px`,
+        maxWidth: `700px`,
         marginLeft: `auto`,
         marginRight: `auto`,
       }}
