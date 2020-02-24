@@ -16,20 +16,29 @@ export default () => {
       >
         <Image />
       </div>
-      <h1>Here are my contacts </h1>
+      <h1
+        style={{
+          marginLeft: `20px`,
+          textAlign: `center`,
+        }}
+      >
+        Please feel free to contact me if you have any questions{" "}
+      </h1>
+
       <div
         style={{
           display: `flex`,
           flexDirection: `row`,
           justifyContent: `space-around`,
-          paddingLeft: `5px`,
-          paddingRight: `5px`,
         }}
       >
-        <Link to="/projectsReview/">About my projects</Link>
-        <Link to="/aboutme/">About me</Link>
-        <Link to="/contacts/">Contacts</Link>
-        <Link to="/resume/">My resume</Link>
+        <p>email: igor.slabykh@gmail.com</p>
+        <p>
+          <a href="https://www.linkedin.com/in/igor-slabykh-2787862b/">
+            Linked-In
+          </a>
+        </p>
+        <p>cell phone: (703) 509-27-35</p>
       </div>
     </Layout>
   )
