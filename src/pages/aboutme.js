@@ -25,12 +25,7 @@ export default () => {
           paddingLeft: `5px`,
           paddingRight: `5px`,
         }}
-      >
-        <Link to="/projectsReview/">About my projects</Link>
-        <Link to="/aboutme/">About me</Link>
-        <Link to="/contacts/">Contacts</Link>
-        <Link to="/resume/">My resume</Link>
-      </div>
+      ></div>
     </Layout>
   )
 }

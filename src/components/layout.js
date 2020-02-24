@@ -62,7 +62,6 @@ const Layout = ({ children }) => (
     <main
       className="content"
       style={{
-        maxWidth: `700px`,
         marginLeft: `auto`,
         marginRight: `auto`,
       }}

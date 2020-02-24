@@ -31,17 +31,17 @@ export default () => {
   return (
     <Layout>
       {projects.map(({ node: project }) => {
+        const imageData = project.image.childImageSharp.fluid
         const title = project.title
         const description = project.description
         const slug = project.slug
-        const imageData = project.image.childImageSharp.fluid
 
         return (
           <ProjectPreview
+            imageData={imageData}
             title={title}
             description={description}
             slug={slug}
-            imageData={imageData}
           />
         )
       })}

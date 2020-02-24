@@ -4,14 +4,36 @@ import Image from "gatsby-image"
 
 const ProjectPreview = ({ slug, imageData, title, description }) => (
   <div className="project-preview">
-    <Link to={`/${slug}/`}>
-      <Image fluid={imageData} alt={title} />
-    </Link>
-    <h2>
+    <h2
+      style={{
+        textAlign: `center`,
+      }}
+    >
       <Link to={`/${slug}/`}>{title}</Link>
     </h2>
-    <p>{description}</p>
-    <p>
+    <p
+      style={{
+        marginLeft: `20px`,
+      }}
+    >
+      {description}
+    </p>
+    <Link to={`/${slug}/`}>
+      <Image
+        fluid={imageData}
+        alt={title}
+        style={{
+          maxWidth: `250px`,
+          marginLeft: `auto`,
+          marginRight: `auto`,
+        }}
+      />
+    </Link>
+    <p
+      style={{
+        marginLeft: `20px`,
+      }}
+    >
       <Link to={`/${slug}/`}>View this project &rarr; </Link>
     </p>
   </div>
