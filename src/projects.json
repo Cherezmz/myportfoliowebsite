@@ -4,7 +4,7 @@
     "slug": "tic-tac-toe",
     "url": "https://github.com/Cherezmz/tic-tac-toe",
     "image": "./images/tic-tac-toe.png",
-    "description": "I need to add description here"
+    "description": "For this project I used the following technologies: HTML, CSS, JavaScript (in particular, working with DOM and JS events "
   },
 
   {
@@ -12,7 +12,7 @@
     "slug": "python-sql-note-taker",
     "url": "https://github.com/Cherezmz/noteTakerPythonSQL",
     "image": "./images/notetaker-code.png",
-    "description": "I need to add description here python+SQL"
+    "description": "For this project I used the following technologies: Python, SQL database with PeeWee models"
   },
 
   {
@@ -20,7 +20,7 @@
     "slug": "modern-trousseau",
     "url": "https://github.com/Cherezmz/moderntrousseau",
     "image": "./images/gowns.png",
-    "description": "I need to add description here and may be more images"
+    "description": "In this group project I was working on both back and front end. For the backend I was a part of the team that worked on API, GraphQL and Contentful. For front end I worked on separate components using React and Storybook"
   },
 
   {
@@ -28,6 +28,6 @@
     "slug": "war",
     "url": "https://github.com/Cherezmz/Game-of-War",
     "image": "./images/war-console.png",
-    "description": "I need to add description here"
+    "description": "For this project I used JavaScript"
   }
 ]

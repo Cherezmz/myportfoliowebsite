@@ -16,11 +16,17 @@ export default () => {
           marginBottom: `1.45rem`,
           marginLeft: `auto`,
           marginRight: `auto`,
+          paddingTop: `50px`,
         }}
       >
         <Image />
       </div>
-      <h1>
+      <h1
+        style={{
+          textAlign: `center`,
+          paddingTop: `50px`,
+        }}
+      >
         Hello! My name is Igor Slabykh and I am glad to welcome you on my
         portfolio web site{" "}
       </h1>

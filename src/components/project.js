@@ -26,17 +26,20 @@ const Project = ({ imageData, title, description, url }) => (
       }}
     />
 
-    <p>{description}</p>
-    {/* <p>
-      <Link to={url}>View this project on HitHub </Link>
-    </p> */}
-
-    <p>
-      <a href={url}>View this project on HitHub </a>
+    <p
+      style={{
+        paddingTop: `20px`,
+      }}
+    >
+      {description}
     </p>
 
     <p>
-      <Link to="/projectsReview/">back to all projects </Link>
+      <a href={url}>View the code of this project on HitHub </a>
+    </p>
+
+    <p>
+      <Link to="/projectsReview/">Back to all projects </Link>
     </p>
   </div>
 )
