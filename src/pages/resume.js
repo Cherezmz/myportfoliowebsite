@@ -18,28 +18,33 @@ const DownloadsPage = () => {
   `)
   return (
     <Layout>
-      <h1
+      <p
         style={{
           width: `90%`,
           marginBottom: `1.45rem`,
           marginLeft: `auto`,
           marginRight: `auto`,
+          paddingTop: `75px`,
+          paddingBottom: `75px`,
+          textAlign: `center`,
         }}
       >
         If you want to download my resume in PDF format, please click the link
         below
-      </h1>
-      <ul>
+      </p>
+      <div
+        style={{
+          textAlign: `center`,
+        }}
+      >
         {data.allFile.edges.map((file, index) => {
           return (
-            <li key={`pdf-${index}`}>
-              <a href={file.node.publicURL} download>
-                {file.node.name}
-              </a>
-            </li>
+            <a href={file.node.publicURL} download>
+              {file.node.name}
+            </a>
           )
         })}
-      </ul>
+      </div>
     </Layout>
   )
 }
