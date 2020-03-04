@@ -8,10 +8,11 @@ export default () => {
     <Layout>
       <div
         style={{
-          maxWidth: `300px`,
+          maxWidth: `350px`,
           marginBottom: `1.45rem`,
           marginLeft: `auto`,
           marginRight: `auto`,
+          paddingTop: `70px`,
         }}
       >
         <Image />
@@ -22,6 +23,7 @@ export default () => {
           textIndent: `20px`,
           textAlign: `justify`,
           marginRight: `20px`,
+          paddingTop: `70px`,
         }}
       >
         I am a highly accomplished professional with a record of repeated
