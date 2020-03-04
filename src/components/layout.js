@@ -68,6 +68,26 @@ const Layout = ({ children }) => (
     >
       {children}
     </main>
+    <footer
+      style={{
+        background: `rebeccapurple`,
+        marginTop: `30px`,
+        height: `100px`,
+        textAlign: `center`,
+        marginLeft: `auto`,
+        marginRight: `auto`,
+      }}
+    >
+      <h1
+        style={{
+          color: `white`,
+          fontSize: `30px`,
+          paddingTop: `25px`,
+        }}
+      >
+        This GatsbyJS+React website is my project too :)
+      </h1>
+    </footer>
   </React.Fragment>
 )
 

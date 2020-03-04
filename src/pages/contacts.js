@@ -12,6 +12,8 @@ export default () => {
           marginBottom: `1.45rem`,
           marginLeft: `auto`,
           marginRight: `auto`,
+          paddingTop: `30px`,
+          paddingBottom: `30px`,
         }}
       >
         <Image />
