@@ -47,6 +47,7 @@ const Layout = ({ children }) => (
           style={{
             color: `white`,
             fontWeight: `bolder`,
+            textDecoration: `none`,
           }}
         >
           Home
@@ -56,6 +57,7 @@ const Layout = ({ children }) => (
           style={{
             color: `white`,
             fontWeight: `bolder`,
+            textDecoration: `none`,
           }}
         >
           My projects
@@ -65,6 +67,7 @@ const Layout = ({ children }) => (
           style={{
             color: `white`,
             fontWeight: `bolder`,
+            textDecoration: `none`,
           }}
         >
           About me
@@ -74,6 +77,7 @@ const Layout = ({ children }) => (
           style={{
             color: `white`,
             fontWeight: `bolder`,
+            textDecoration: `none`,
           }}
         >
           Contacts
@@ -83,6 +87,7 @@ const Layout = ({ children }) => (
           style={{
             color: `white`,
             fontWeight: `bolder`,
+            textDecoration: `none`,
           }}
         >
           My resume
