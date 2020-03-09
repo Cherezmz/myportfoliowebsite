@@ -5,32 +5,32 @@ import ProjectPreview from "../components/project-preview"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import styled from "styled-components"
+
+const WelcomeText = styled.h1`
+  text-align: center;
+  padding: 70px 20px;
+`
+
+const Wrapper = styled.dev`
+  max-width: 300px;
+  margin-bottom: 1.45rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 80px;
+`
 
 export default () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <div
-        style={{
-          maxWidth: `300px`,
-          marginBottom: `1.45rem`,
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          paddingTop: `80px`,
-        }}
-      >
+      <Wrapper>
         <Image />
-      </div>
-      <h1
-        style={{
-          textAlign: `center`,
-          paddingTop: `70px`,
-          paddingBottom: `70px`,
-        }}
-      >
+      </Wrapper>
+      <WelcomeText>
         Hello! My name is Igor Slabykh and I am glad to welcome you on my
         portfolio web site{" "}
-      </h1>
+      </WelcomeText>
     </Layout>
   )
 }
