@@ -1,34 +1,52 @@
 import React from "react"
 import { Link } from "gatsby"
 import "./layout.css"
+import styled from "styled-components"
+
+const NavBarDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  padding-top: 4%;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+`
+
+const LayoutFooter = styled.footer`
+  background: rebeccapurple;
+  margin-top: 4%;
+  height: 100px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+`
+
+const LayoutHeader = styled.header`
+  background: rebeccapurple;
+  margin-bottom: 1.45rem;
+  height: 100px;
+  text-align: center;
+`
+
+const LayoutText = styled.h1`
+  color: white;
+  font-size: 25px;
+  padding-top: 25px;
+`
 
 const Layout = ({ children }) => (
   <React.Fragment>
-    <header
-      className="header"
-      style={{
-        background: `rebeccapurple`,
-        marginBottom: `1.45rem`,
-        height: `100px`,
-        textAlign: `center`,
-      }}
-    >
-      <div
-        style={{
-          display: `flex`,
-          flexDirection: `row`,
-          justifyContent: `space-between`,
-          color: `white`,
-          paddingTop: `30px`,
-          marginLeft: `5%`,
-          marginRight: `5%`,
-          width: `90%`,
-        }}
-      >
+    <LayoutHeader>
+      <NavBarDiv>
         <Link
           to="/"
           style={{
             color: `white`,
+            fontWeight: `bolder`,
           }}
         >
           Home
@@ -37,14 +55,16 @@ const Layout = ({ children }) => (
           to="/projectsReview/"
           style={{
             color: `white`,
+            fontWeight: `bolder`,
           }}
         >
-          About my projects
+          My projects
         </Link>
         <Link
           to="/aboutme/"
           style={{
             color: `white`,
+            fontWeight: `bolder`,
           }}
         >
           About me
@@ -53,6 +73,7 @@ const Layout = ({ children }) => (
           to="/contacts/"
           style={{
             color: `white`,
+            fontWeight: `bolder`,
           }}
         >
           Contacts
@@ -61,94 +82,18 @@ const Layout = ({ children }) => (
           to="/resume/"
           style={{
             color: `white`,
+            fontWeight: `bolder`,
           }}
         >
           My resume
         </Link>
-      </div>
-    </header>
-    <main
-      className="content"
-      style={{
-        marginLeft: `auto`,
-        marginRight: `auto`,
-      }}
-    >
-      {children}
-    </main>
-    <footer
-      style={{
-        background: `rebeccapurple`,
-        marginTop: `30px`,
-        height: `100px`,
-        textAlign: `center`,
-        marginLeft: `auto`,
-        marginRight: `auto`,
-      }}
-    >
-      <h1
-        style={{
-          color: `white`,
-          fontSize: `30px`,
-          paddingTop: `25px`,
-        }}
-      >
-        This GatsbyJS+React website is my project too :)
-      </h1>
-    </footer>
+      </NavBarDiv>
+    </LayoutHeader>
+    <main>{children}</main>
+    <LayoutFooter>
+      <LayoutText>This GatsbyJS+React website is my project too :)</LayoutText>
+    </LayoutFooter>
   </React.Fragment>
 )
 
 export default Layout
-
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
-// import React from "react"
-// import PropTypes from "prop-types"
-// import { useStaticQuery, graphql, Link } from "gatsby"
-
-// import Header from "./header"
-// import "./layout.css"
-
-// const Layout = ({ children }) => {
-//   const data = useStaticQuery(graphql`
-//     query SiteTitleQuery {
-//       site {
-//         siteMetadata {
-//           title
-//         }
-//       }
-//     }
-//   `)
-
-//   return (
-//     <>
-//       <Header siteTitle={data.site.siteMetadata.title} />
-//       <div
-//         style={{
-//           margin: `0 auto`,
-//           maxWidth: 960,
-//           padding: `0 1.0875rem 1.45rem`,
-//         }}
-//       >
-//         <main>{children}</main>
-//         <footer>
-//           © {new Date().getFullYear()}, Built with
-//           {` `}
-//           <a href="https://www.gatsbyjs.org">Gatsby</a>
-//         </footer>
-//       </div>
-//     </>
-//   )
-// }
-
-// Layout.propTypes = {
-//   children: PropTypes.node.isRequired,
-// }
-
-// export default Layout
