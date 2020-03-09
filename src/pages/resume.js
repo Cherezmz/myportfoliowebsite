@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import styled from "styled-components"
+import CVImage from "../components/cv"
 
 const ResumeP = styled.p`
   width: 90%;
@@ -45,6 +46,7 @@ const DownloadsPage = () => {
           )
         })}
       </Wrapper>
+      <CVImage />
     </Layout>
   )
 }
