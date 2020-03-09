@@ -26,6 +26,10 @@ const ContactsDetailsWrapper = styled.div`
   margin-right: auto;
   width: 70%;
   font-size: 20px;
+  @media (max-width: 810px) {
+    flex-flow: column;
+    align-items: center;
+  }
 `
 
 export default () => {
