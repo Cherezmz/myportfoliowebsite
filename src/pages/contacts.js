@@ -10,7 +10,7 @@ const ContactsDiv = styled.div`
   margin-left: auto;
   margin-right: auto;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 `
 
 const ContactsH1 = styled.h1`
@@ -22,6 +22,10 @@ const ContactsDetailsWrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  font-size: 20px;
 `
 
 export default () => {
