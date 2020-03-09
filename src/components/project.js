@@ -1,47 +1,41 @@
 import React from "react"
 import { Link } from "gatsby"
 import Image from "gatsby-image"
+import styled from "styled-components"
 
+const ProjectDiv = styled.div`
+  margin-left: 80px;
+`
+// to ensure that projectDib changes smth
+
+const ProjectH1 = styled.h1`
+  text-align: center;
+`
+const ImgWrapper = styled.div`
+  max-width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+`
+
+const ProjectP = styled.p`
+  padding-top: 20px;
+`
 const Project = ({ imageData, title, description, url }) => (
-  <div
-    className="project"
-    style={{
-      marginLeft: `20px`,
-    }}
-  >
-    <h1
-      style={{
-        textAlign: `center`,
-      }}
-    >
-      {title}
-    </h1>
-    <Image
-      fluid={imageData}
-      alt={title}
-      style={{
-        maxWidth: `40%`,
-        marginLeft: `auto`,
-        marginRight: `auto`,
-      }}
-    />
+  <ProjectDiv>
+    <ProjectH1>{title}</ProjectH1>
+    <ImgWrapper>
+      <Image fluid={imageData} alt={title} />
+    </ImgWrapper>
+    <ProjectP>{description}</ProjectP>
 
-    <p
-      style={{
-        paddingTop: `20px`,
-      }}
-    >
-      {description}
-    </p>
-
-    <p>
+    <ProjectP>
       <a href={url}>View the code of this project on HitHub </a>
-    </p>
+    </ProjectP>
 
-    <p>
+    <ProjectP>
       <Link to="/projectsReview/">Back to all projects </Link>
-    </p>
-  </div>
+    </ProjectP>
+  </ProjectDiv>
 )
 
 export default Project
