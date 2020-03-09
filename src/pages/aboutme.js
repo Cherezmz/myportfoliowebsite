@@ -2,57 +2,41 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
+import styled from "styled-components"
+
+const AboutDiv = styled.div`
+  max-width: 400px;
+  margin-bottom: 1.45rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 70px;
+`
+
+const AboutP = styled.p`
+  margin-left: 20px;
+  text-indent: 20px;
+  text-align: justify;
+  margin-right: 20px;
+  padding-top: 20px;
+`
 
 export default () => {
   return (
     <Layout>
-      <div
-        style={{
-          maxWidth: `350px`,
-          marginBottom: `1.45rem`,
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          paddingTop: `70px`,
-        }}
-      >
+      <AboutDiv>
         <Image />
-      </div>
-      <p
-        style={{
-          marginLeft: `20px`,
-          textIndent: `20px`,
-          textAlign: `justify`,
-          marginRight: `20px`,
-          paddingTop: `70px`,
-        }}
-      >
+      </AboutDiv>
+      <AboutP>
         I am a highly accomplished professional with a record of repeated
         success over sixteen years of legal, management and business
         experience.Companies such as Microsoft, Adobe Systems, Corel, and
         Graphisoft were among my clients and employers.{" "}
-      </p>
-      <p
-        style={{
-          marginLeft: `20px`,
-          textIndent: `20px`,
-          textAlign: `justify`,
-          marginRight: `20px`,
-        }}
-      >
+      </AboutP>
+      <AboutP>
         I recently moved to the US, have begun my career in software development
         from scratch, and graduated from three-month, 500-hour full-time and
-        full-stack General Assembly Software Engineering Immersive program.{" "}
-      </p>
-
-      <div
-        style={{
-          display: `flex`,
-          flexDirection: `row`,
-          justifyContent: `space-around`,
-          paddingLeft: `5px`,
-          paddingRight: `5px`,
-        }}
-      ></div>
+        full-stack General Assembly Software Engineering Immersive program.
+      </AboutP>
     </Layout>
   )
 }
