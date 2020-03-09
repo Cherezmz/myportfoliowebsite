@@ -2,38 +2,39 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
+import styled from "styled-components"
+
+const ContactsDiv = styled.div`
+  max-width: 500px;
+  margin-bottom: 1.45rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+`
+
+const ContactsH1 = styled.h1`
+  margin-left: 20px;
+  text-align: center;
+`
+
+const ContactsDetailsWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+`
 
 export default () => {
   return (
     <Layout>
-      <div
-        style={{
-          maxWidth: `300px`,
-          marginBottom: `1.45rem`,
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          paddingTop: `30px`,
-          paddingBottom: `30px`,
-        }}
-      >
+      <ContactsDiv>
         <Image />
-      </div>
-      <h1
-        style={{
-          marginLeft: `20px`,
-          textAlign: `center`,
-        }}
-      >
+      </ContactsDiv>
+      <ContactsH1>
         Please feel free to contact me if you have any questions{" "}
-      </h1>
+      </ContactsH1>
 
-      <div
-        style={{
-          display: `flex`,
-          flexDirection: `row`,
-          justifyContent: `space-around`,
-        }}
-      >
+      <ContactsDetailsWrapper>
         <p>email: igor.slabykh@gmail.com</p>
         <p>
           <a href="https://www.linkedin.com/in/igor-slabykh-2787862b/">
@@ -41,7 +42,7 @@ export default () => {
           </a>
         </p>
         <p>cell phone: (703) 509-27-35</p>
-      </div>
+      </ContactsDetailsWrapper>
     </Layout>
   )
 }
