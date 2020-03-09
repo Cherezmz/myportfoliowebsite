@@ -9,28 +9,28 @@ import styled from "styled-components"
 
 const WelcomeText = styled.h1`
   text-align: center;
-  padding: 70px 20px;
 `
 
-const Wrapper = styled.dev`
-  max-width: 300px;
+const Wrapper = styled.div`
+  max-width: 500px;
   margin-bottom: 1.45rem;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 80px;
 `
 
 export default () => {
   return (
     <Layout>
       <SEO title="Home" />
+
+      <WelcomeText>Hello! </WelcomeText>
+      <WelcomeText>My name is Igor Slabykh.</WelcomeText>
+      <WelcomeText>
+        I am glad to welcome you on my portfolio web site{" "}
+      </WelcomeText>
       <Wrapper>
         <Image />
       </Wrapper>
-      <WelcomeText>
-        Hello! My name is Igor Slabykh and I am glad to welcome you on my
-        portfolio web site{" "}
-      </WelcomeText>
     </Layout>
   )
 }

@@ -26,6 +26,14 @@ const Layout = ({ children }) => (
         }}
       >
         <Link
+          to="/"
+          style={{
+            color: `white`,
+          }}
+        >
+          Home
+        </Link>
+        <Link
           to="/projectsReview/"
           style={{
             color: `white`,
