@@ -18,7 +18,7 @@ const CVImage = () => {
     query {
       file(relativePath: { eq: "resumeSlabykh.png" }) {
         childImageSharp {
-          fluid(maxWidth: 500) {
+          fluid(maxWidth: 1500) {
             ...GatsbyImageSharpFluid
           }
         }
