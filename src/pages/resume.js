@@ -6,16 +6,23 @@ import CVImage from "../components/cv"
 
 const ResumeP = styled.p`
   width: 90%;
-  margin-bottom: 1.45rem;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 75px;
-  padding-bottom: 75px;
+
+  font-size: 20px;
   text-align: center;
 `
 
 const Wrapper = styled.div`
   text-align: center;
+`
+const ResumeA = styled.a`
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  font-weight: bold;
 `
 
 const DownloadsPage = () => {
@@ -34,19 +41,19 @@ const DownloadsPage = () => {
   return (
     <Layout>
       <ResumeP>
-        If you want to download my resume in PDF format, please click the link
-        below
-      </ResumeP>
-      <Wrapper>
+        If you want to download my resume in PDF format, please click the link:{" "}
         {data.allFile.edges.map((file, index) => {
           return (
-            <a href={file.node.publicURL} download>
+            <ResumeA href={file.node.publicURL} download>
               {file.node.name}
-            </a>
+            </ResumeA>
           )
         })}
+      </ResumeP>
+
+      <Wrapper>
+        <CVImage />
       </Wrapper>
-      <CVImage />
     </Layout>
   )
 }
