@@ -1,5 +1,12 @@
 [
   {
+    "title": "Group client project",
+    "slug": "modern-trousseau",
+    "url": "https://github.com/Cherezmz/moderntrousseau",
+    "image": "./images/gowns.png",
+    "description": "In this group project I was working on both back and front end. For the backend I was a part of the team that worked on API, GraphQL and Contentful. For front end I worked on separate components using Gatsby, React and Storybook. In particular, I worked on season collection card component, dress list item, navigation bar, etc"
+  },
+  {
     "title": "Tic-Tac-Toe",
     "slug": "tic-tac-toe",
     "url": "https://github.com/Cherezmz/tic-tac-toe",
@@ -13,14 +20,6 @@
     "url": "https://github.com/Cherezmz/noteTakerPythonSQL",
     "image": "./images/notetaker-code.png",
     "description": "For this project I used the following technologies: Python, SQL database with PeeWee models"
-  },
-
-  {
-    "title": "Group project",
-    "slug": "modern-trousseau",
-    "url": "https://github.com/Cherezmz/moderntrousseau",
-    "image": "./images/gowns.png",
-    "description": "In this group project I was working on both back and front end. For the backend I was a part of the team that worked on API, GraphQL and Contentful. For front end I worked on separate components using React and Storybook"
   },
 
   {
