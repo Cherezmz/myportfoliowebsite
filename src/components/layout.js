@@ -30,6 +30,7 @@ const LinkH4 = styled.h4`
   @media (max-width: 600px) {
     border: 1px solid black;
     margin: 5px;
+    text-decoration: none;
   }
 `
 
