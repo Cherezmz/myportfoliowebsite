@@ -14,6 +14,10 @@ const NavBarDiv = styled.div`
   width: 90%;
   line-height: 20px;
   letter-spacing: 0.1em;
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+  }
 `
 
 const LayoutFooter = styled.footer`
