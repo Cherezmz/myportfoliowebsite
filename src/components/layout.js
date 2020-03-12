@@ -12,11 +12,24 @@ const NavBarDiv = styled.div`
   margin-left: 5%;
   margin-right: 5%;
   width: 90%;
-  line-height: 20px;
-  letter-spacing: 0.1em;
+
   @media (max-width: 600px) {
     display: flex;
     flex-direction: column;
+    align-content: space-between;
+  }
+`
+const LinkDiv = styled.div``
+
+const LinkH4 = styled.h4`
+  color: white;
+  font-weight: bolder;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  @media (max-width: 600px) {
+    border: 1px solid black;
+    margin: 5px;
   }
 `
 
@@ -34,6 +47,9 @@ const LayoutHeader = styled.header`
   margin-bottom: 1.45rem;
   height: 100px;
   text-align: center;
+  @media (max-width: 600px) {
+    height: 200px;
+  }
 `
 
 const LayoutText = styled.h1`
@@ -46,56 +62,37 @@ const Layout = ({ children }) => (
   <React.Fragment>
     <LayoutHeader>
       <NavBarDiv>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            fontWeight: `bolder`,
-            textDecoration: `none`,
-          }}
-        >
-          Home
-        </Link>
-        <Link
-          to="/projectsReview/"
-          style={{
-            color: `white`,
-            fontWeight: `bolder`,
-            textDecoration: `none`,
-          }}
-        >
-          My projects
-        </Link>
-        <Link
-          to="/aboutme/"
-          style={{
-            color: `white`,
-            fontWeight: `bolder`,
-            textDecoration: `none`,
-          }}
-        >
-          About me
-        </Link>
-        <Link
-          to="/contacts/"
-          style={{
-            color: `white`,
-            fontWeight: `bolder`,
-            textDecoration: `none`,
-          }}
-        >
-          Contacts
-        </Link>
-        <Link
-          to="/resume/"
-          style={{
-            color: `white`,
-            fontWeight: `bolder`,
-            textDecoration: `none`,
-          }}
-        >
-          My resume
-        </Link>
+        <LinkDiv>
+          <Link>
+            <LinkH4>Home</LinkH4>
+          </Link>
+        </LinkDiv>
+
+        <LinkDiv>
+          <Link to="/projectsReview/">
+            <LinkH4> My projects </LinkH4>
+          </Link>
+        </LinkDiv>
+
+        <LinkDiv>
+          <Link to="/aboutme/">
+            {" "}
+            <LinkH4>About me </LinkH4>
+          </Link>
+        </LinkDiv>
+
+        <LinkDiv>
+          <Link to="/contacts/">
+            <LinkH4>Contacts</LinkH4>
+          </Link>
+        </LinkDiv>
+
+        <LinkDiv>
+          <Link to="/resume/">
+            {" "}
+            <LinkH4> My resume </LinkH4>
+          </Link>
+        </LinkDiv>
       </NavBarDiv>
     </LayoutHeader>
     <main>{children}</main>
