@@ -19,6 +19,14 @@ const NavBarDiv = styled.div`
     align-content: space-between;
     text-decoration: none;
     box-shadow: none;
+
+    &:focus,
+    &:hover,
+    &:visited,
+    &:link,
+    &:active {
+      text-decoration: none;
+    }
   }
 `
 const LinkDiv = styled.div``
@@ -30,12 +38,26 @@ const LinkH4 = styled.h4`
   letter-spacing: 0.1em;
   text-decoration: none;
   box-shadow: none;
+  &:focus,
+  &:hover,
+  &:visited,
+  &:link,
+  &:active {
+    text-decoration: none;
+  }
 
   @media (max-width: 600px) {
     border: 1px solid black;
     margin: 5px;
     text-decoration: none;
     box-shadow: none;
+    &:focus,
+    &:hover,
+    &:visited,
+    &:link,
+    &:active {
+      text-decoration: none;
+    }
   }
 `
 
