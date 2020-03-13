@@ -27,6 +27,8 @@ const LinkH4 = styled.h4`
   line-height: 20px;
   letter-spacing: 0.1em;
   text-decoration: none;
+  box-shadow: none;
+
   @media (max-width: 600px) {
     border: 1px solid black;
     margin: 5px;
