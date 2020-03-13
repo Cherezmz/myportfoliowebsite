@@ -7,30 +7,29 @@ const NavBarDiv = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  color: white;
+   color: white;
   padding-top: 4%;
   margin-left: 5%;
   margin-right: 5%;
   width: 90%;
-
   @media (max-width: 600px) {
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-  }
-`
-const LinkDiv = styled.div``
+       flex-direction: column;
+    `
 
 const LinkH4 = styled.h4`
   color: white;
-  font-weight: bolder;
   line-height: 20px;
   letter-spacing: 0.1em;
   text-decoration: none;
   box-shadow: none;
+
   @media (max-width: 600px) {
     border: 1px solid black;
     margin: 5px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 2px;
+    text-transform: uppercase;
   }
 `
 
@@ -55,7 +54,7 @@ const LayoutHeader = styled.header`
 
 const LayoutText = styled.h1`
   color: white;
-  font-size: 25px;
+  font-size: 20px;
   padding-top: 25px;
 `
 
@@ -63,37 +62,27 @@ const Layout = ({ children }) => (
   <React.Fragment>
     <LayoutHeader>
       <NavBarDiv>
-        <LinkDiv>
-          <Link>
-            <LinkH4>Home</LinkH4>
-          </Link>
-        </LinkDiv>
+        <Link>
+          <LinkH4>Home</LinkH4>
+        </Link>
 
-        <LinkDiv>
-          <Link to="/projectsReview/">
-            <LinkH4> My projects </LinkH4>
-          </Link>
-        </LinkDiv>
+        <Link to="/projectsReview/">
+          <LinkH4> My projects </LinkH4>
+        </Link>
 
-        <LinkDiv>
-          <Link to="/aboutme/">
-            {" "}
-            <LinkH4>About me </LinkH4>
-          </Link>
-        </LinkDiv>
+        <Link to="/aboutme/">
+          {" "}
+          <LinkH4>About me </LinkH4>
+        </Link>
 
-        <LinkDiv>
-          <Link to="/contacts/">
-            <LinkH4>Contacts</LinkH4>
-          </Link>
-        </LinkDiv>
+        <Link to="/contacts/">
+          <LinkH4>Contacts</LinkH4>
+        </Link>
 
-        <LinkDiv>
-          <Link to="/resume/">
-            {" "}
-            <LinkH4> My resume </LinkH4>
-          </Link>
-        </LinkDiv>
+        <Link to="/resume/">
+          {" "}
+          <LinkH4> My resume </LinkH4>
+        </Link>
       </NavBarDiv>
     </LayoutHeader>
     <main>{children}</main>
