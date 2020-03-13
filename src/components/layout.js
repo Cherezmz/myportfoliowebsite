@@ -17,6 +17,8 @@ const NavBarDiv = styled.div`
     display: flex;
     flex-direction: column;
     align-content: space-between;
+    text-decoration: none;
+    box-shadow: none;
   }
 `
 const LinkDiv = styled.div``
@@ -33,6 +35,7 @@ const LinkH4 = styled.h4`
     border: 1px solid black;
     margin: 5px;
     text-decoration: none;
+    box-shadow: none;
   }
 `
 
