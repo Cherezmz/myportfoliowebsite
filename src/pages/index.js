@@ -9,6 +9,8 @@ import styled from "styled-components"
 
 const WelcomeText = styled.h1`
   text-align: center;
+  font-size: 22px;
+  font-weight: lighter;
 `
 
 const Wrapper = styled.div`
@@ -26,7 +28,7 @@ export default () => {
       <WelcomeText>Hello! </WelcomeText>
       <WelcomeText>My name is Igor Slabykh.</WelcomeText>
       <WelcomeText>
-        I am glad to welcome you on my portfolio web site{" "}
+        I am glad to welcome you on my portfolio web site.
       </WelcomeText>
       <Wrapper>
         <Image />
