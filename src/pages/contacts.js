@@ -16,6 +16,7 @@ const ContactsDiv = styled.div`
 const ContactsH1 = styled.h1`
   margin-left: 20px;
   text-align: center;
+  font-size: 1.5rem;
 `
 
 const ContactsDetailsWrapper = styled.div`

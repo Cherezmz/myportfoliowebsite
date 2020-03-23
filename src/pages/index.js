@@ -25,7 +25,7 @@ export default () => {
     <Layout>
       <SEO title="Home" />
 
-      <WelcomeText>Hello! </WelcomeText>
+      <WelcomeText>Hello World! </WelcomeText>
       <WelcomeText>My name is Igor Slabykh.</WelcomeText>
       <WelcomeText>
         I am glad to welcome you on my portfolio web site.

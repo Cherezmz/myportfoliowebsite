@@ -12,6 +12,7 @@ const NavBarDiv = styled.div`
   margin-left: 5%;
   margin-right: 5%;
   width: 90%;
+ 
   @media (max-width: 600px) {
        flex-direction: column;
     `
@@ -47,6 +48,7 @@ const LayoutHeader = styled.header`
   margin-bottom: 1.45rem;
   height: 100px;
   text-align: center;
+
   @media (max-width: 600px) {
     height: 200px;
   }

@@ -8,8 +8,7 @@ const ResumeP = styled.p`
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-
-  font-size: 20px;
+  font-size: 1.5rem;
   text-align: center;
 `
 
@@ -50,7 +49,6 @@ const DownloadsPage = () => {
           )
         })}
       </ResumeP>
-
       <Wrapper>
         <CVImage />
       </Wrapper>
